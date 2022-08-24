@@ -8,10 +8,10 @@ export const Button = (props) => {
   };
   
     return (
-    <div
-    className={`button-container ${isOperation(props.children) ? 'operator' : null}`}
-    onClick={() => props.handleClick(props.children)}>
-        {props.children}
-    </div>
+      <div
+        className={`button-container ${isOperation(props.children) ? 'operator' : null}`}
+        onClick={() => props.handleClick(props.children)}>
+            {props.children}
+      </div>
   );
 }
